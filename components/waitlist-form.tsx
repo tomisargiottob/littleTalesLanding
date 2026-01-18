@@ -85,7 +85,7 @@ export function WaitlistForm({
 
   return (
     <div className={className}>
-      <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+      <form onSubmit={handleSubmit} className="flex items-center gap-4 flex-col sm:justify-center">
         <div className="w-full sm:w-80">
           <Input
             type="email"

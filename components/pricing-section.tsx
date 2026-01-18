@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card"
 import { Check } from "lucide-react"
 import type { Locale } from "@/lib/i18n-config"
 import { getServerMessages } from "@/lib/server-messages"
+import { WaitlistForm } from "./waitlist-form"
 
 interface PricingSectionProps {
   locale: Locale
@@ -25,6 +26,7 @@ export function PricingSection({ locale }: PricingSectionProps) {
       descriptionKey: "pricing.free.description",
       features: ["pricing.free.feature1", "pricing.free.feature2", "pricing.free.feature3"],
       ctaKey: "pricing.free.cta",
+      disabled: true,
       popular: false,
     },
     {
@@ -39,6 +41,7 @@ export function PricingSection({ locale }: PricingSectionProps) {
         "pricing.artist.feature4",
       ],
       ctaKey: "pricing.artist.cta",
+      disabled: true,
       popular: true,
     },
     {
@@ -54,6 +57,7 @@ export function PricingSection({ locale }: PricingSectionProps) {
         "pricing.pro.feature5",
       ],
       ctaKey: "pricing.pro.cta",
+      disabled: true,
       popular: false,
     },
   ]
@@ -113,17 +117,18 @@ export function PricingSection({ locale }: PricingSectionProps) {
                   </li>
                 ))}
               </ul>
-
-              <Button
+              <WaitlistForm locale={locale} />
+              {/* <Button
                 className={`w-full ${
                   plan.popular
                     ? "bg-primary hover:bg-primary/90"
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 }`}
                 size="lg"
+                disabled={plan.disabled}
               >
                 {getServerMessages(locale, plan.ctaKey)}
-              </Button>
+              </Button> */}
             </Card>
           ))}
         </div>
