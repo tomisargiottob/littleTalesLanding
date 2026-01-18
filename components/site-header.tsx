@@ -6,26 +6,20 @@ import { Button } from "@/components/ui/button"
 import { BookText } from "lucide-react"
 import type { Locale } from "@/lib/i18n-config"
 import { LanguageSwitcher } from "./language-switcher"
+import { getServerMessages } from "@/lib/server-messages"
 
 interface SiteHeaderProps {
   locale: Locale
-  messages: {
-    "nav.home": string
-    "nav.blog": string
-    "nav.features": string
-    "nav.pricing": string
-    "hero.cta": string
-  }
 }
 
-export function SiteHeader({ locale, messages }: SiteHeaderProps) {
+export function SiteHeader({ locale }: SiteHeaderProps) {
   const pathname = usePathname()
 
   const navigation = [
-    { name: messages["nav.home"], href: `/${locale}` },
-    { name: messages["nav.blog"], href: `/${locale}/blog` },
-    { name: messages["nav.features"], href: `/${locale}/#features` },
-    { name: messages["nav.pricing"], href: `/${locale}/#pricing` },
+    { name: getServerMessages(locale, "nav.home"), href: `/${locale}` },
+    { name: getServerMessages(locale, "nav.blog"), href: `/${locale}/blog` },
+    { name: getServerMessages(locale, "nav.features"), href: `/${locale}/#features` },
+    { name: getServerMessages(locale, "nav.pricing"), href: `/${locale}/#pricing` },
   ]
 
   const isActive = (href: string) => {
@@ -61,7 +55,7 @@ export function SiteHeader({ locale, messages }: SiteHeaderProps) {
 
         <div className="flex items-center gap-2">
           <Button asChild className="hidden sm:inline-flex">
-            <Link href={`/${locale}#cta`}>{messages["hero.cta"]}</Link>
+            <Link href={`/${locale}#cta`}>{getServerMessages(locale, "hero.cta")}</Link>
           </Button>
           <LanguageSwitcher currentLocale={locale} />
         </div>

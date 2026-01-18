@@ -49,31 +49,33 @@ const messages = {
     'pricing.cta': 'Get Started',
     'pricing.popular': 'Most Popular',
     'pricing.perMonth': '/month',
-    'pricing.footer': 'All plans include free shipping and 30-day money-back guarantee',
+    'pricing.footer': 'All plans include 30-day money-back guarantee',
     'pricing.free.name': 'Explorer',
     'pricing.free.price': '$0',
     'pricing.free.description': 'Perfect for trying out personalized stories',
-    'pricing.free.feature1': '1 personalized story',
-    'pricing.free.feature2': 'Basic customization',
-    'pricing.free.feature3': 'PDF download',
-    'pricing.free.cta': 'Start Free',
-    'pricing.artist.name': 'Artist',
-    'pricing.artist.price': '$9.99',
-    'pricing.artist.description': 'Great for regular creative activities',
-    'pricing.artist.feature1': '5 personalized stories',
-    'pricing.artist.feature2': 'Advanced customization',
-    'pricing.artist.feature3': 'Priority support',
-    'pricing.artist.feature4': 'Educational activities',
-    'pricing.artist.cta': 'Choose Artist',
-    'pricing.pro.name': 'Creator',
-    'pricing.pro.price': '$19.99',
-    'pricing.pro.description': 'Perfect for families with multiple children',
-    'pricing.pro.feature1': 'Unlimited stories',
-    'pricing.pro.feature2': 'Full customization',
-    'pricing.pro.feature3': '24/7 support',
-    'pricing.pro.feature4': 'Family sharing',
-    'pricing.pro.feature5': 'Early access features',
-    'pricing.pro.cta': 'Go Pro',
+    "pricing.free.feature1": "One story per week with a drawing",
+    "pricing.free.feature2": "Access to the platform",
+    "pricing.free.feature3": "Drawing library access",
+    "pricing.free.cta": "Start Free",
+
+    "pricing.artist.name": "Artist",
+    "pricing.artist.price": "$9.99",
+    "pricing.artist.description": "Daily stories for creative families",
+    "pricing.artist.feature1": "One story every day",
+    "pricing.artist.feature2": "Black and white drawings to color",
+    "pricing.artist.feature3": "Complete stories to print as booklets",
+    "pricing.artist.feature4": "Full drawing library access",
+    "pricing.artist.cta": "Get Started",
+
+    "pricing.pro.name": "Pro",
+    "pricing.pro.price": "$15.00",
+    "pricing.pro.description": "Fully personalized storytelling experience",
+    "pricing.pro.feature1": "Everything in Artist plan",
+    "pricing.pro.feature2": "Customize story topics",
+    "pricing.pro.feature3": "Add your own descriptions",
+    "pricing.pro.feature4": "Include your child's ideas in stories",
+    "pricing.pro.feature5": "Priority support",
+    "pricing.pro.cta": "Go Pro",
     
     // Benefits Section
     'benefits.title': 'Why Personalized Stories Work Better',
@@ -109,7 +111,17 @@ const messages = {
     'example.quote2': 'Now she spends hours coloring her own adventures!',
     'example.quote3': 'Every morning she asks "What happens next in my story?" It\'s become our special bonding time.',
     'example.quote4': 'The personalized characters and storylines keep her engaged in ways generic coloring books never could.',
-    'example.attribution': 'Sarah M., Mother of 5-year-old Emma'
+    'example.attribution': 'Sarah M., Mother of 5-year-old Emma',
+
+    'waitlist.placeholder': 'Enter your email address',
+    'waitlist.cta': 'Join the Waitlist',
+    'waitlist.success': 'Thank you for joining the waitlist! We\'ll keep you updated.',
+    'waitlist.error': 'Sorry, there was an error. Please try again later.',
+
+    'nav.home': 'Home',
+    'nav.blog': 'Blog',
+    'nav.features': 'Features',
+    'nav.pricing': 'Pricing',
   },
   es: {
     // Hero Section
@@ -170,7 +182,7 @@ const messages = {
     'pricing.cta': 'Comenzar',
     'pricing.popular': 'Más Popular',
     'pricing.perMonth': '/mes',
-    'pricing.footer': 'Todos los planes incluyen envío gratuito y garantía de devolución de 30 días',
+    'pricing.footer': 'Todos los planes incluyen garantía de devolución de 30 días',
     'pricing.free.name': 'Explorador',
     'pricing.free.price': '$0',
     'pricing.free.description': 'Perfecto para probar historias personalizadas',
@@ -218,7 +230,17 @@ const messages = {
     'example.quote2': '¡Ahora pasa horas coloreando sus propias aventuras!',
     'example.quote3': 'Cada mañana pregunta "¿Qué pasa después en mi historia?" Se ha convertido en nuestro tiempo especial de conexión.',
     'example.quote4': 'Los personajes e historias personalizadas la mantienen comprometida de maneras que los libros genéricos nunca podrían.',
-    'example.attribution': 'Sarah M., Madre de Emma de 5 años'
+    'example.attribution': 'Sarah M., Madre de Emma de 5 años',
+
+    'waitlist.placeholder': 'Ingresa tu dirección de correo electrónico',
+    'waitlist.cta': 'Únete a la Lista de Espera',
+    'waitlist.success': '¡Gracias por unirte a la lista de espera! Te mantendremos informado.',
+    'waitlist.error': 'Lo siento, hubo un error. Por favor, inténtalo de nuevo más tarde.',
+
+    'nav.home': 'Inicio',
+    'nav.blog': 'Blog',
+    'nav.features': 'Características',
+    'nav.pricing': 'Precios',
   },
   it: {
     // Hero Section
@@ -279,7 +301,7 @@ const messages = {
     'pricing.cta': 'Inizia',
     'pricing.popular': 'Più Popolare',
     'pricing.perMonth': '/mese',
-    'pricing.footer': 'Tutti i piani includono spedizione gratuita e garanzia di rimborso di 30 giorni',
+    'pricing.footer': 'Tutti i piani includono garanzia di rimborso di 30 giorni',
     'pricing.free.name': 'Esploratore',
     'pricing.free.price': '$0',
     'pricing.free.description': 'Perfetto per provare storie personalizzate',
@@ -327,7 +349,17 @@ const messages = {
     'example.quote2': 'Ora trascorre ore a colorare le sue avventure!',
     'example.quote3': 'Ogni mattina chiede "Cosa succede dopo nella mia storia?" È diventato il nostro momento speciale di connessione.',
     'example.quote4': 'I personaggi personalizzati e le storie la tengono coinvolta in modi che i libri da colorare generici non potrebbero mai fare.',
-    'example.attribution': 'Sarah M., Madre di Emma di 5 anni'
+    'example.attribution': 'Sarah M., Madre di Emma di 5 anni',
+
+    'waitlist.placeholder': 'Inserisci il tuo indirizzo email',
+    'waitlist.cta': 'Unisciti alla Lista di Attesa',
+    'waitlist.success': 'Grazie per esserti unito alla lista di attesa! Ti terremo aggiornato.',
+    'waitlist.error': 'Spiacenti, si è verificato un errore. Per favore riprova più tardi.',
+
+    'nav.home': 'Home',
+    'nav.blog': 'Blog',
+    'nav.features': 'Caratteristiche',
+    'nav.pricing': 'Prezzi',
   }
 }
 

@@ -8,7 +8,6 @@ import { PricingSection } from "@/components/pricing-section"
 import { TrustSection } from "@/components/trust-section"
 import { FinalCTA } from "@/components/final-cta"
 import type { Locale } from "@/lib/i18n-config"
-import { getServerMessages } from "@/lib/server-messages"
 import { HeroSection } from "@/components/hero-section"
 
 export default async function Home({

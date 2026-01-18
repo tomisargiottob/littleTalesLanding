@@ -1,16 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { notFound } from "next/navigation"
 import { i18n, type Locale, isValidLocale } from "@/lib/i18n-config"
-import { getMessages } from "@/lib/get-messages"
 import { SiteHeader } from "@/components/site-header"
 import { generateOrganizationSchema, generateWebsiteSchema, getSiteName, generateAlternateLinks } from "@/lib/seo"
 import "../globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }))
@@ -135,7 +131,6 @@ export default async function LocaleLayout({
     notFound()
   }
 
-  const messages = getMessages(locale as Locale)
   const organizationSchema = generateOrganizationSchema()
   const websiteSchema = generateWebsiteSchema(locale as Locale)
 
@@ -156,7 +151,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body className={`font-sans antialiased`}>
-        <SiteHeader locale={locale as Locale} messages={messages} />
+        <SiteHeader locale={locale as Locale} />
         {children}
         <Analytics />
       </body>
