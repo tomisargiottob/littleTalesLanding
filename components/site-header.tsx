@@ -35,7 +35,7 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
         <div className="flex items-center gap-8">
           <Link href={`/${locale}`} className="flex items-center gap-2 ml-10">
             <BookText className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg">StoryColor</span>
+            <span className="font-semibold text-lg">Tiny Chapters</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">

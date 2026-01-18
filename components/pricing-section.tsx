@@ -42,7 +42,7 @@ export function PricingSection({ locale }: PricingSectionProps) {
       ],
       ctaKey: "pricing.artist.cta",
       disabled: true,
-      popular: true,
+      // popular: true,
     },
     {
       id: "pro",

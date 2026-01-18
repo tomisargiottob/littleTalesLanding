@@ -31,7 +31,7 @@ export function HeroSection({ locale }: { locale: 'es' | 'en' | 'it' }) {
         <div className="mx-auto mt-16 max-w-5xl">
           <div className="rounded-2xl border border-border bg-card p-8 shadow-lg">
             <img
-              src="public/child-coloring-a-page-from-a-personalized-storybook.jpg"
+              src="/child-coloring-a-page-from-a-personalized-storybook.jpg"
               alt={heroAltText}
               className="h-auto w-full rounded-lg"
             />
