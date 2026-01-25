@@ -2,6 +2,7 @@
 
 import { getServerMessages } from "@/lib/server-messages"
 import { WaitlistForm } from "@/components/waitlist-form"
+import Image from "next/image"
 
 export function HeroSection({ locale }: { locale: 'es' | 'en' | 'it' }) {
   const heroTitle = getServerMessages(locale, 'hero.title')
@@ -28,12 +29,15 @@ export function HeroSection({ locale }: { locale: 'es' | 'en' | 'it' }) {
           </p>
         </div>
 
-        <div className="mx-auto mt-16 max-w-5xl">
+        <div className="mx-auto mt-6 max-w-3xl">
           <div className="rounded-2xl border border-border bg-card p-8 shadow-lg">
-            <img
-              src="/child-coloring-a-page-from-a-personalized-storybook.jpg"
+            <Image
+              src="/kid-coloring-story.png"
               alt={heroAltText}
+              width={1000}
+              height={600}
               className="h-auto w-full rounded-lg"
+              priority
             />
           </div>
         </div>

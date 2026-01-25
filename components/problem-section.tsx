@@ -17,7 +17,7 @@ export function ProblemSection({ locale }: ProblemSectionProps) {
   const timeTitle = getServerMessages(locale, 'problem.time.title')
   const timeDesc = getServerMessages(locale, 'problem.time.description')
   return (
-    <section className="py-20 md:py-24" id="features">
+    <section className="py-10 md:py-24" id="features">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-balance text-3xl font-bold tracking-tight md:text-4xl">
